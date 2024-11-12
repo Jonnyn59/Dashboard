@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable eqeqeq */
 import React from 'react';
 import './App.css';
 import ReactDOM from 'react-dom/client';
@@ -18,7 +20,6 @@ function App() {
         )
       }, 10000);
     }, 3000);
-    
   }
   function Auth() {
     let login = document.getElementById("login")
