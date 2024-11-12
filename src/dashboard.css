@@ -1,0 +1,39 @@
+.body2 {
+    background-image: url("./img/6219117.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.back_1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s all ease-in;
+    animation: back1 1s ease-in normal;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .left_panel {
+    position: absolute;
+    width: 15vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.1);
+    backdrop-filter: blur(5vw);
+    -webkit-backdrop-filter: blur(5vw);
+  }
+  .user {
+    position: absolute;
+    width: 60%;
+    height: 5vh;
+    top: 5vh;
+    background-color: gray;
+  }
+  .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100vh;
+  }

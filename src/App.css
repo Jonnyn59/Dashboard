@@ -1,0 +1,246 @@
+@keyframes back1 {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+@keyframes Loading {
+  0% {
+    width: 0%;
+    top: 99.5%;
+  }
+  25% {
+    width: 35%;
+  }
+  60% {
+    width: 60%;
+  }
+  90% {
+    top: 99.5%;
+    width: 100%;
+  }
+  95% {
+    top: 99%;
+    height: 1%;
+    width: 100%;
+  }
+  100% {
+    top: 100%;
+    height: 1%;
+    width: 100%;
+  }
+}
+
+.loadd {
+  animation: Loading 10s ease-in-out normal;
+  top: 100%;
+  width: 100%;
+  background-color: #1DC9A0;
+  position: absolute;
+}
+
+@keyframes boxAnim {
+  from {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 0;
+    border: 0.01vw rgba(0, 0, 0, 0);
+    content-visibility: hidden;
+  }
+  to {
+    content-visibility: visible;
+    background-color: rgba(128, 128, 128, 0.1);
+    backdrop-filter: blur(5vw);
+    -webkit-backdrop-filter: blur(5vw);
+    border-radius: 1vw;
+    border: 0.01vw rgba(255, 255, 255, 1) solid;
+  }
+}
+
+@keyframes BoxAnimNew {
+  0% {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 0;
+    border: 0.01vw rgba(0, 0, 0, 0);
+    content-visibility: hidden;
+  }
+  80% {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 0;
+    border: 0.01vw rgba(0, 0, 0, 0);
+    content-visibility: hidden;
+  }
+  100% {
+    content-visibility: visible;
+    background-color: rgba(128, 128, 128, 0.1);
+    backdrop-filter: blur(5vw);
+    -webkit-backdrop-filter: blur(5vw);
+    border-radius: 1vw;
+    border: 0.01vw rgba(255, 255, 255, 1) solid;
+  }
+}
+body{
+  margin: 0;
+}
+.body1{
+  background-image: url("./img/6219117.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.loadLine {
+  position: absolute;
+  width: 0%;
+  top: 99.5%;
+  height: 0.5%;
+  background-color: #1DC9A0;
+}
+.back1 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s all ease-in;
+  animation: back1 1s ease-in normal;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.Box {
+  position: absolute;
+  width: 31.25vw;
+  height: 55vh;
+  background-color: rgba(128, 128, 128, 0.1);
+  backdrop-filter: blur(5vw);
+  -webkit-backdrop-filter: blur(5vw);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 1vw;
+  animation: BoxAnimNew 2s ease-out normal;
+  border: 0.01vw white solid;
+  transition: 1s opacity ease-in;
+}
+.login_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  transform: translateX(-50%) translateY(-300%) ;
+}
+.pass_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  transform: translateX(-50%) translateY(-150%) ;
+}
+.login , .pass {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.1vw solid gray;
+  color: white;
+  transition: 0.5s all ease-out;
+}
+.login:focus ,
+.pass:focus {
+  outline: 0;
+  content: none;
+  color: white;
+}
+.login:valid ~ .l , 
+.pass:valid ~ .p {
+  transform: translateY(-150%);
+}
+.login:focus ~ .l ,
+.pass:focus ~ .p {
+  transform: translateY(-150%);
+}
+.l , .p {
+  z-index: 1;
+  color: black;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 12px;
+  transition: 0.25s all ease-in-out;
+}
+.line1 , .line2 {
+  position: absolute;
+  top: 100%;
+  background-color: goldenrod;
+  width: 0%;
+  left: 50%;
+  height: 1.5px;
+  transition: 0.5s all ease-out;
+}
+.pass:focus ~ .line2 {
+  width: 102%;
+  left: 0%;
+}
+.pass:focus {
+  border-bottom: 0px solid gray;
+}
+.login:focus {
+  border-bottom: 0px solid gray;
+}
+.login:focus ~ .line1 {
+  width: 102%;
+  left: 0%;
+}
+.loginbtn {
+  position: absolute;
+  border: 1px solid #1DC9A0;
+  color: #1DC9A0;
+  background-color: rgba(29, 201, 160, 0.08);
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.15s linear;
+  pointer-events: stroke;
+  width: 200px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,25%);
+}
+.loginbtn:active {
+  background-color: transparent;
+  border-color: #1DC9A0;
+  color: #1DC9A0;
+  border-radius: 0;
+}
+.loginbtn:disabled {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #8E8E93;
+  border-color: #8E8E93;
+}
+.Title {
+  position: absolute;
+  left: 50%;
+  top: 12.5%;
+  transform: translateX(-50%);
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  color: white;
+  transition: 0.10s all linear;
+}
