@@ -6,8 +6,7 @@ import "../src/img/user.png"
 import { getDatabase, ref } from "firebase/database";
 import { initializeApp } from "firebase/app";
 import { set } from "lodash";
-const firebaseConfig = {
-};
+const firebaseConfig = {...};
 
 let app = initializeApp(firebaseConfig);
 
