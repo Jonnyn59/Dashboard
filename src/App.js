@@ -48,7 +48,8 @@ function App() {
           if (result == true) {
             loginBox.style.opacity = 0
             setTimeout(function(){
-              back1.style.opacity = 0
+              back1.style.opacity = 0;
+              back1.checkVisibility = false
             } , 100);
             loadStart()
         }else {
