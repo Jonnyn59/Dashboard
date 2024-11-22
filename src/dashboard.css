@@ -1,217 +1,145 @@
 .body2 {
-background-image: url("./img/6219117.jpg");
-background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin: 0;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+  background-image: url("./img/6219117.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
+
 .back_1 {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    transition: 1s all ease-in;
-    animation: back1 1s ease-in normal;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  .activedButton {
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.1);
-  }
-  .left_panel {
-    position: absolute;
-    width: 15vw;
-    height: 90vh;
-    top: 5vh;
-    left: 1vw;
-    background-color: rgba(128, 128, 128, 0);
-    backdrop-filter: blur(5vw);
-    -webkit-backdrop-filter: blur(5vw);
-    border-radius: 1vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-  }
-  .user {
-    position: absolute;
-    width: 100%;
-    height: 5vh;
-    top: 5%;
-    transform: translate(0%,-5%);
-    background-color: rgba(100, 100, 100, 0.01);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-  }
-  .iconUser {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 1vh;
-    top: 50%;
-    left: 5%;
-    transform: translate(-2%,-50%);
-    background-image: url("./img/user.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 0.5px solid black;
-  }
-  .user span {
-    position: absolute;
-    left: 70px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .btns {
-    position: absolute;
-    top: 25%;
-    left: 0%;
-    width: 100%;
-    height: 75%;
-  }
-  #MainButton {
-    position: absolute;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-    border-radius: 0.5vw;
-  }
-  #MainButton:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.3);
-  }
-  #Statistics {
-    position: absolute;
-    margin-top: 20%;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-  }
-  #Statistics:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.3);
-  }
-  #Salary {
-    position: absolute;
-    margin-top: 40%;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-  }
-  #Salary:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.3);
-  }
-  #Settings {
-    position: absolute;
-    top: 57.5%;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-  }
-  #Settings:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.3);
-  }
-  #Exit {
-    position: absolute;
-    top: 65%;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-  }
-  #Exit:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(256, 128, 128, 0.3);
-    background-color: rgba(256, 128, 128, 0.1);
-  }
-  #UsersDB {
-    position: absolute;
-    margin-top: 60%;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-  }
-  #UsersDB:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.3);
-  }
-  #PaySettings {
-    position: absolute;
-    margin-top: 80%;
-    width: 80%;
-    height: 5%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    border: 1px solid transparent;
-    border-radius: 0.5vw;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(1000vw);
-    -webkit-backdrop-filter: blur(1000vw);
-    color: white;
-  }
-  #PaySettings:hover {
-    border-radius: 0.5vw;
-    border: 1px solid rgba(128, 128, 128, 0.3);
-    background-color: rgba(128, 128, 128, 0.3);
-  }
-  .right_panel {
-    position: absolute;
-    left: 17.5vw;
-    width: 80vw;
-    height: 90vh;
-    top: 5vh;
-    background-color: rgba(100, 100, 100, 0);
-    backdrop-filter: blur(5vw);
-    -webkit-backdrop-filter: blur(5vw);
-    border-radius: 1vw;
-    border: 1px solid rgba(128, 128, 128, 0.308);
-  }
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s all ease-in;
+  animation: back1 1s ease-in normal;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.activedButton {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.left_panel {
+  position: absolute;
+  width: 15vw;
+  height: 90vh;
+  top: 5vh;
+  left: 1vw;
+  background-color: rgba(128, 128, 128, 0);
+  backdrop-filter: blur(5vw);
+  -webkit-backdrop-filter: blur(5vw);
+  border-radius: 1vw;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.user {
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  top: 5%;
+  transform: translate(0%,-5%);
+  background-color: rgba(100, 100, 100, 0.01);
+  backdrop-filter: blur(1000vw);
+  -webkit-backdrop-filter: blur(1000vw);
+}
+
+.iconUser {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 1vh;
+  top: 50%;
+  left: 5%;
+  transform: translate(-2%,-50%);
+  background-image: url("./img/user.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 0.5px solid black;
+}
+
+.user span {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btns {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+}
+
+.btns:hover{
+  background-color: rgba(10, 10, 10, 0.50);
+}
+
+.button {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  border: 1px solid transparent;
+  border-radius: 0.5vw;
+  background-color: rgba(100, 100, 100, 0);
+  backdrop-filter: blur(1000vw);
+  -webkit-backdrop-filter: blur(1000vw);
+  color: white;
+}
+
+.button:hover {
+  border-radius: 0.5vw;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+#MainButton {
+  top: 20%;
+}
+
+#Statistics {
+  top: 30%;
+}
+
+#Salary {
+  top: 40%;
+}
+
+#Settings {
+  top: 50%;
+}
+
+#Exit {
+  top: 60%;
+  border-color: rgba(256, 128, 128, 0.3);
+  background-color: rgba(256, 128, 128, 0.1);
+}
+
+#UsersDB {
+  top: 70%;
+}
+
+#PaySettings {
+  top: 80%;
+}
+
+.right_panel {
+  position: absolute;
+  left: 17.5vw;
+  width: 80vw;
+  height: 90vh;
+  top: 5vh;
+  background-color: rgba(100, 100, 100, 0);
+  backdrop-filter: blur(5vw);
+  -webkit-backdrop-filter: blur(5vw);
+  border-radius: 1vw;
+  border: 1px solid rgba(128, 128, 128, 0.308);
+}
